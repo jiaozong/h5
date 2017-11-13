@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>text</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+.box {
+width:30px;
+height: 100%;
+border:1px solid red;
+background-color: red;
+
+
+	
+}
+
+
+</style>
+</head>
+<body>
+	<div class="box" id="box"> rvefkc xndc</div>
+
+</body>
+<script src="jQuery版本/jquery-1.12.4.js"></script>
+
+<script type="text/javascript">
+
+var winHeight =0;
+autodivheight();
+function autodivheight() {
+	var box =document.getElementById('box');
+	if (document.documentElement && document.documentElement.clientHeight)
+        winHeight = document.documentElement.clientHeight;
+    box.style.height =winHeight+"px";
+}
+ 
+    window.onresize=autodivheight;
+console.log(box);
+</script>
+</html>
